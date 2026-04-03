@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>备考计划 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+
+
 <style>
 :root {
   --bg: #f5f2ec;
@@ -30,17 +30,17 @@
   --radius-lg: 10px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 15px; line-height: 1.6; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 15px; line-height: 1.6; }
 
 /* HEADER */
 .header { background: var(--text); color: var(--bg); padding: 1.5rem 2rem 0; position: sticky; top: 0; z-index: 100; }
 .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
-.logo { font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 600; letter-spacing: 0.05em; }
-.logo span { display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 400; opacity: 0.5; margin-top: 2px; letter-spacing: 0.1em; }
-.header-meta { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: 0.6; }
-.header-meta strong { display: block; font-size: 22px; font-weight: 500; opacity: 1; color: var(--bg); font-family: 'Noto Serif SC', serif; }
+.logo { font-family: "Songti SC", "SimSun", "STSong", serif; font-size: 20px; font-weight: 600; letter-spacing: 0.05em; }
+.logo span { display: block; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11px; font-weight: 400; opacity: 0.5; margin-top: 2px; letter-spacing: 0.1em; }
+.header-meta { text-align: right; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11px; opacity: 0.6; }
+.header-meta strong { display: block; font-size: 22px; font-weight: 500; opacity: 1; color: var(--bg); font-family: "Songti SC", "SimSun", "STSong", serif; }
 .tabs { display: flex; gap: 0; }
-.tab { padding: 10px 16px; font-size: 13px; cursor: pointer; border: none; background: none; color: rgba(245,242,236,0.5); border-bottom: 2px solid transparent; font-family: 'Noto Sans SC', sans-serif; letter-spacing: 0.02em; transition: color 0.2s; }
+.tab { padding: 10px 16px; font-size: 13px; cursor: pointer; border: none; background: none; color: rgba(245,242,236,0.5); border-bottom: 2px solid transparent; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: 0.02em; transition: color 0.2s; }
 .tab:hover { color: rgba(245,242,236,0.8); }
 .tab.active { color: var(--bg); border-bottom: 2px solid var(--accent); }
 
@@ -59,12 +59,12 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 
 /* CARDS */
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 12px; }
-.card-title { font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 600; margin-bottom: 1rem; color: var(--text); }
+.card-title { font-family: "Songti SC", "SimSun", "STSong", serif; font-size: 15px; font-weight: 600; margin-bottom: 1rem; color: var(--text); }
 
 /* STATS */
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 12px; }
 .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem; text-align: center; }
-.stat-num { font-family: 'Noto Serif SC', serif; font-size: 28px; font-weight: 600; color: var(--text); display: block; }
+.stat-num { font-family: "Songti SC", "SimSun", "STSong", serif; font-size: 28px; font-weight: 600; color: var(--text); display: block; }
 .stat-label { font-size: 11px; color: var(--text3); margin-top: 2px; letter-spacing: 0.05em; }
 
 /* PHASE */
@@ -72,7 +72,7 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 .phase:last-child { margin-bottom: 0; }
 .phase-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 .phase-bar-line { height: 3px; flex: 1; border-radius: 2px; }
-.phase-name { font-size: 12px; font-weight: 500; white-space: nowrap; font-family: 'JetBrains Mono', monospace; }
+.phase-name { font-size: 12px; font-weight: 500; white-space: nowrap; font-family: "SF Mono", Menlo, Consolas, monospace; }
 .milestone { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--text2); padding: 2px 0; }
 .dot { width: 5px; height: 5px; border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
 
@@ -81,7 +81,7 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 .time-row:last-child { margin-bottom: 0; }
 .time-head { display: flex; justify-content: space-between; margin-bottom: 4px; }
 .time-label { font-size: 13px; font-weight: 500; }
-.time-val { font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--text3); }
+.time-val { font-size: 12px; font-family: "SF Mono", Menlo, Consolas, monospace; color: var(--text3); }
 .progress { background: var(--bg2); border-radius: 3px; height: 5px; overflow: hidden; }
 .progress-fill { height: 100%; border-radius: 3px; }
 
@@ -97,15 +97,15 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 .week-nav button { width: 34px; height: 34px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); cursor: pointer; font-size: 16px; color: var(--text2); display: flex; align-items: center; justify-content: center; }
 .week-nav button:hover { background: var(--bg2); }
 .week-info { text-align: center; }
-.week-num { font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 600; }
-.week-range { font-size: 11px; color: var(--text3); font-family: 'JetBrains Mono', monospace; margin-top: 1px; }
+.week-num { font-family: "Songti SC", "SimSun", "STSong", serif; font-size: 16px; font-weight: 600; }
+.week-range { font-size: 11px; color: var(--text3); font-family: "SF Mono", Menlo, Consolas, monospace; margin-top: 1px; }
 
 /* DAY ROWS */
 .day-row { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
 .day-row:last-child { border-bottom: none; }
 .day-col { min-width: 50px; }
 .day-name { font-size: 13px; font-weight: 500; }
-.day-date { font-size: 10px; color: var(--text3); font-family: 'JetBrains Mono', monospace; }
+.day-date { font-size: 10px; color: var(--text3); font-family: "SF Mono", Menlo, Consolas, monospace; }
 .blocks { display: flex; flex-wrap: wrap; gap: 5px; flex: 1; }
 .block { font-size: 12px; padding: 3px 8px; border-radius: 3px; line-height: 1.4; }
 .block-en { background: var(--en-bg); color: var(--en); }
@@ -121,7 +121,7 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 .check-row.done label { text-decoration: line-through; opacity: 0.45; }
 
 /* BUTTONS */
-.btn { font-family: 'Noto Sans SC', sans-serif; font-size: 13px; padding: 7px 16px; border: 1px solid var(--border2); border-radius: var(--radius); background: var(--surface); color: var(--text); cursor: pointer; transition: background 0.15s; }
+.btn { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 13px; padding: 7px 16px; border: 1px solid var(--border2); border-radius: var(--radius); background: var(--surface); color: var(--text); cursor: pointer; transition: background 0.15s; }
 .btn:hover { background: var(--bg2); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
@@ -131,7 +131,7 @@ body { font-family: 'Noto Sans SC', sans-serif; background: var(--bg); color: va
 .form-group { margin-bottom: 12px; }
 .form-label { font-size: 12px; color: var(--text3); margin-bottom: 4px; display: block; letter-spacing: 0.03em; }
 input[type=text], input[type=password], textarea {
-  font-family: 'Noto Sans SC', sans-serif; font-size: 13px; color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 13px; color: var(--text);
   background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 8px 10px; width: 100%; transition: border-color 0.15s;
 }
@@ -140,20 +140,20 @@ textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
 
 /* MOOD */
 .mood-row { display: flex; gap: 6px; flex-wrap: wrap; }
-.mood-btn { font-size: 12px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px; background: var(--bg); cursor: pointer; font-family: 'Noto Sans SC', sans-serif; transition: all 0.15s; }
+.mood-btn { font-size: 12px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px; background: var(--bg); cursor: pointer; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; transition: all 0.15s; }
 .mood-btn.selected { background: var(--text); color: var(--bg); border-color: var(--text); }
 
 /* REVIEW */
 .review-entry { border-left: 2px solid var(--border2); padding: 8px 12px; margin-bottom: 10px; }
 .review-entry:last-child { margin-bottom: 0; }
-.review-meta { font-size: 11px; color: var(--text3); font-family: 'JetBrains Mono', monospace; margin-bottom: 6px; }
+.review-meta { font-size: 11px; color: var(--text3); font-family: "SF Mono", Menlo, Consolas, monospace; margin-bottom: 6px; }
 .review-section { font-size: 13px; margin-bottom: 4px; color: var(--text2); }
 .review-section span { color: var(--text3); font-size: 11px; margin-right: 4px; }
 
 /* WEEK PROG */
 .week-prog-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 .week-prog-day { font-size: 12px; color: var(--text2); width: 36px; }
-.week-prog-count { font-size: 11px; color: var(--text3); font-family: 'JetBrains Mono', monospace; min-width: 32px; text-align: right; }
+.week-prog-count { font-size: 11px; color: var(--text3); font-family: "SF Mono", Menlo, Consolas, monospace; min-width: 32px; text-align: right; }
 
 /* RETRO */
 .retro-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
@@ -171,7 +171,7 @@ textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
 .step-title { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
 .step-desc { font-size: 12px; color: var(--text2); line-height: 1.6; }
 .step-desc a { color: var(--accent); }
-.step-desc code { background: var(--bg2); padding: 1px 5px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+.step-desc code { background: var(--bg2); padding: 1px 5px; border-radius: 3px; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 11px; }
 
 .notion-configured { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #ddf0e6; border-radius: var(--radius); font-size: 13px; color: var(--des); margin-bottom: 12px; }
 
@@ -248,7 +248,7 @@ textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
     <div class="time-row"><div class="time-head"><span class="time-label">政治</span><span class="time-val">75 min</span></div><div class="progress"><div class="progress-fill" style="width:31.25%;background:var(--pol)"></div></div></div>
     <div class="time-row"><div class="time-head"><span class="time-label">设计史</span><span class="time-val">60 min</span></div><div class="progress"><div class="progress-fill" style="width:25%;background:var(--des)"></div></div></div>
     <div class="time-row"><div class="time-head"><span class="time-label">复习整理</span><span class="time-val">15 min</span></div><div class="progress"><div class="progress-fill" style="width:6.25%;background:var(--rest)"></div></div></div>
-    <p style="font-size:11px;color:var(--text3);margin-top:10px;font-family:'JetBrains Mono',monospace">周日可完整休息或轻度复习（≤1小时）</p>
+    <p style="font-size:11px;color:var(--text3);margin-top:10px;font-family:'SF Mono',Menlo,Consolas,monospace">周日可完整休息或轻度复习（≤1小时）</p>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
   <div class="card">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
       <div class="card-title" style="margin:0">今日打卡</div>
-      <span style="font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace" id="today-label"></span>
+      <span style="font-size:11px;color:var(--text3);font-family:'SF Mono',Menlo,Consolas,monospace" id="today-label"></span>
     </div>
     <div id="daily-tasks"></div>
     <hr class="divider">
@@ -343,6 +343,11 @@ textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
       连接 Notion 后，每次打卡和写复盘都会自动保存到你的 Notion 数据库，实现跨设备同步。
     </p>
 
+    <div class="form-group">
+      <label class="form-label">Cloudflare Worker 网址</label>
+      <input type="text" id="notion-proxy-url" placeholder="https://notion-proxy.你的用户名.workers.dev">
+      <div style="font-size:11px;color:var(--text3);margin-top:4px">从 Cloudflare Workers 页面复制你的 Worker 网址</div>
+    </div>
     <div class="form-group">
       <label class="form-label">Notion API Token</label>
       <input type="password" id="notion-token" placeholder="secret_xxxxxxxxxxxxxxxxxxxxxx">
@@ -472,7 +477,7 @@ const WPLANS = {
 // ---- STATE ----
 let state = { checks:{}, reviews:[], retro:{}, selectedMood:3 };
 let currentWeek = 0;
-let notionConfig = { token:'', checkinDb:'', reviewDb:'' };
+let notionConfig = { token:'', checkinDb:'', reviewDb:'', proxyUrl:'' };
 
 function loadState() {
   try {
@@ -498,11 +503,13 @@ function fmtMD(d){ return `${d.getMonth()+1}/${d.getDate()}`; }
 function getPhase(date){ for(const p of PHASES){ if(date>=new Date(p.start)&&date<=new Date(p.end)) return p; } return null; }
 
 // ---- NOTION API ----
-const NOTION_PROXY = 'https://notion-proxy.claudetools.workers.dev'; // CORS proxy
+const NOTION_PROXY = ''; // ← 在这里填入你的 Cloudflare Worker 网址
 
 async function notionRequest(path, method, body) {
   if (!notionConfig.token) throw new Error('未配置 Token');
-  const res = await fetch(`https://notion-proxy.1808702910.workers.dev/${path}`, {
+  const proxy = notionConfig.proxyUrl || NOTION_PROXY;
+  if (!proxy) throw new Error('未配置 Worker 网址，请在设置页面填写 Cloudflare Worker 网址');
+  const res = await fetch(`${proxy}${path}`, {
     method,
     headers: {
       'Authorization': `Bearer ${notionConfig.token}`,
@@ -605,7 +612,7 @@ function renderWeek() {
   document.getElementById('week-range').textContent=`${fmtMD(ws)} — ${fmtMD(we)}`;
   const phase=getPhase(ws);
   let html='';
-  if(phase) html+=`<div style="display:inline-block;font-size:11px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:3px;margin-bottom:12px;font-weight:500;background:${phase.color}44;color:${phase.tc}">${phase.name}</div>`;
+  if(phase) html+=`<div style="display:inline-block;font-size:11px;font-family:'SF Mono',Menlo,Consolas,monospace;padding:3px 8px;border-radius:3px;margin-bottom:12px;font-weight:500;background:${phase.color}44;color:${phase.tc}">${phase.name}</div>`;
   html+='<div class="card" style="padding:0.75rem 1.25rem">';
   for(let i=0;i<7;i++){
     const d=new Date(ws); d.setDate(d.getDate()+i);
@@ -736,7 +743,7 @@ function renderRetro() {
     document.getElementById('retro-feeling').value=r.feeling||'';
     document.getElementById('retro-method').value=r.method||'';
     document.getElementById('retro-change').value=r.change||'';
-    let html=`<p style="font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-bottom:8px">最后更新 ${r.updatedAt}</p>`;
+    let html=`<p style="font-size:11px;color:var(--text3);font-family:'SF Mono',Menlo,Consolas,monospace;margin-bottom:8px">最后更新 ${r.updatedAt}</p>`;
     if(r.feeling) html+=`<div class="review-entry"><div class="review-meta">备考感悟</div><div style="font-size:13px;color:var(--text2)">${r.feeling}</div></div>`;
     if(r.method)  html+=`<div class="review-entry"><div class="review-meta">最有效的方法</div><div style="font-size:13px;color:var(--text2)">${r.method}</div></div>`;
     if(r.change)  html+=`<div class="review-entry"><div class="review-meta">如果重来</div><div style="font-size:13px;color:var(--text2)">${r.change}</div></div>`;
@@ -748,6 +755,7 @@ function renderRetro() {
 
 // ---- SETTINGS ----
 function loadSettingsForm() {
+  document.getElementById('notion-proxy-url').value=notionConfig.proxyUrl||'';
   document.getElementById('notion-token').value=notionConfig.token||'';
   document.getElementById('notion-checkin-db').value=notionConfig.checkinDb||'';
   document.getElementById('notion-review-db').value=notionConfig.reviewDb||'';
@@ -755,6 +763,7 @@ function loadSettingsForm() {
 }
 
 function saveNotionSettings() {
+  notionConfig.proxyUrl=document.getElementById('notion-proxy-url').value.trim();
   notionConfig.token=document.getElementById('notion-token').value.trim();
   notionConfig.checkinDb=document.getElementById('notion-checkin-db').value.trim().replace(/-/g,'');
   notionConfig.reviewDb=document.getElementById('notion-review-db').value.trim().replace(/-/g,'');
@@ -774,7 +783,7 @@ async function testNotionConnection() {
   if(!token){ result.textContent='请先填写 API Token'; result.style.color='var(--accent)'; return; }
   if(!dbId){ result.textContent='请先填写打卡记录数据库 ID'; result.style.color='var(--accent)'; return; }
   try {
-    const res = await fetch(`https://notion-proxy.1808702910.workers.dev/v1/databases/${dbId}`, {
+    const res = await fetch(`${proxyUrl}/v1/databases/${dbId}`, {
       headers:{
         'Authorization':`Bearer ${token}`,
         'Notion-Version':'2022-06-28',
