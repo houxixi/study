@@ -502,7 +502,7 @@ const NOTION_PROXY = 'https://notion-proxy.claudetools.workers.dev'; // CORS pro
 
 async function notionRequest(path, method, body) {
   if (!notionConfig.token) throw new Error('未配置 Token');
-  const res = await fetch(`https://api.notion.com${path}`, {
+  const res = await fetch(`https://notion-proxy.1808702910.workers.dev/${path}`, {
     method,
     headers: {
       'Authorization': `Bearer ${notionConfig.token}`,
@@ -774,7 +774,7 @@ async function testNotionConnection() {
   if(!token){ result.textContent='请先填写 API Token'; result.style.color='var(--accent)'; return; }
   if(!dbId){ result.textContent='请先填写打卡记录数据库 ID'; result.style.color='var(--accent)'; return; }
   try {
-    const res = await fetch(`https://api.notion.com/v1/databases/${dbId}`, {
+    const res = await fetch(`https://notion-proxy.1808702910.workers.dev/v1/databases/${dbId}`, {
       headers:{
         'Authorization':`Bearer ${token}`,
         'Notion-Version':'2022-06-28',
